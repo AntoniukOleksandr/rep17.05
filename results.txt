@@ -1,0 +1,44 @@
+MacBook-Pro:rep17.05 alex$ git status
+On branch main
+Your branch is up-to-date with 'origin/main'.
+
+nothing to commit, working tree clean
+MacBook-Pro:rep17.05 alex$ git branch
+  gilochka
+* main
+MacBook-Pro:rep17.05 alex$ git log
+commit 339c78232f72fbb90b42484c782c6a0e402df239 (HEAD -> main, origin/main, origin/HEAD)
+Author: Oleksandr Antoniuk <128966546+AntoniukOleksandr@users.noreply.github.com>
+Date:   Wed May 17 16:36:36 2023 +0300
+
+    Created index2.html with 6th changes
+
+commit 792072e03713d66158d2ea7aaa99984bb07da31c
+Merge: 5856018 6e635bb
+Author: alex <alex.nyuk@gmail.com>
+Date:   Wed May 17 16:34:35 2023 +0300
+
+    branches merged, conflict fixed
+
+commit 58560182d0052ae9ff9a2d77806fff7737fc59f0
+Author: alex <alex.nyuk@gmail.com>
+Date:   Wed May 17 16:28:30 2023 +0300
+
+    4th changes
+
+commit 6e635bb7eef245131a41eaf12c16c03f9b33a306 (origin/gilochka, gilochka)
+Author: alex <alex.nyuk@gmail.com>
+MacBook-Pro:rep17.05 alex$ git log --merges
+commit 792072e03713d66158d2ea7aaa99984bb07da31c
+Merge: 5856018 6e635bb
+Author: alex <alex.nyuk@gmail.com>
+Date:   Wed May 17 16:34:35 2023 +0300
+
+    branches merged, conflict fixed
+MacBook-Pro:rep17.05 alex$ touch results.txt
+MacBook-Pro:rep17.05 alex$ git add .
+MacBook-Pro:rep17.05 alex$ git commit -m "results.txt added"
+[main 344b60f] results.txt added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 results.txt
+MacBook-Pro:rep17.05 alex$ nano results.txt
